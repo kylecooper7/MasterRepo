@@ -8,7 +8,7 @@ public class baldness
 				// TODO Auto-generated method stub
 System.out.println("Be bald");
 
-System.out.println("balder");
+System.out.println("balder"); 
 			}
 
 	}
