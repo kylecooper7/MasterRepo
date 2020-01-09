@@ -43,6 +43,14 @@ public class baldness
 				int numberFour = userIntInput.nextInt();
 				int subtractedNumber = subtractNumbers(numberThree, numberFour);
 				System.out.println("the numbers subtracted is " + subtractedNumber);
+				
+				
+				System.out.println("Please pick two numbers to divide");
+				int numberFive = userIntInput.nextInt();
+				int numberSix = userIntInput.nextInt();
+				int dividedNumber = divideNumbers(numberFive, numberSix);
+				System.out.println("the numbers divided is " + dividedNumber);
+				
 
 			}
 		
@@ -75,6 +83,10 @@ public class baldness
 		{
 			return a - b;
 		}
+		private static int divideNumbers( int d, int c)
+			{
+				return d/c;
+			}
 
 
 	}
