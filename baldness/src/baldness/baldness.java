@@ -5,42 +5,40 @@ import java.util.Scanner;
 public class baldness
 	{
 		static Scanner userIntInput = new Scanner(System.in);
-		static Scanner userStringInput = new Scanner(System.in); 
+		static Scanner userStringInput = new Scanner(System.in);
 
 		public static void main(String[] args)
 			{
 
 				// TODO Auto-generated method stub
-				
-				System.out.println("Hello, what is your name?");
-				String name = userStringInput.nextLine(); 
-				System.out.println("Hello " + name); 
-				System.out.println("How old are you?");
-				int age = userIntInput.nextInt(); 
-				
-				if(age >= 18)
-					{ 
-						System.out.println("Great! You're an adult!");
-					}
-				
-				else 
-					{ 
-						System.out.println("CHILD!");
-					}
 
-				
-				
-				for (int i = 0; i < 10; i++)
-					{
-						System.out.print("gigiddy ");
-					}
-      
-
-
+				greetUser();
 				printNumberOneToTen();
 				sumNumberMethod();
 				multiplyNumberMethod();
 				subtractNumbersMethod();
+				divideNumbersMethod();
+
+			}
+
+		private static void greetUser()
+			{
+
+				System.out.println("Hello, what is your name?");
+				String name = userStringInput.nextLine();
+				System.out.println("Hello " + name);
+				System.out.println("How old are you?");
+				int age = userIntInput.nextInt();
+
+				if (age >= 18)
+					{
+						System.out.println("Great! You're an adult!");
+					}
+
+				else
+					{
+						System.out.println("CHILD!");
+					}
 
 			}
 
@@ -55,8 +53,6 @@ public class baldness
 				System.out.println("The sum of the numbers is " + sumOfNumbers);
 			}
 
-	
-
 		public static void multiplyNumberMethod()
 			{
 				System.out.println("Please enter two numbers to be multiplied");
@@ -69,8 +65,6 @@ public class baldness
 						+ ". When you multiply them you get " + multipliedTotal);
 			}
 
-	
-
 		public static void subtractNumbersMethod()
 			{
 				System.out.println("Please pick two numbers to subtract");
@@ -79,20 +73,17 @@ public class baldness
 				int subtractedNumber = subtractNumbers(numberThree, numberFour);
 
 				System.out.println("The numbers subtracted is " + subtractedNumber);
-				
-				
-				System.out.println("Please pick two numbers to divide");
-				int numberFive = userIntInput.nextInt();
-				int numberSix = userIntInput.nextInt();
-				int dividedNumber = divideNumbers(numberFive, numberSix);
-				System.out.println("the numbers divided is " + dividedNumber);
-				
-
 
 			}
 
-
-		
+		public static void divideNumbersMethod()
+			{
+				System.out.println("Please pick two numbers to divide");
+				double numberFive = userIntInput.nextInt();
+				double numberSix = userIntInput.nextInt();
+				double dividedNumber = divideNumbers(numberFive, numberSix);
+				System.out.println("the numbers divided is " + dividedNumber);
+			}
 
 		private static void printNumberOneToTen()
 			{
@@ -102,29 +93,24 @@ public class baldness
 
 			}
 
-
 		private static int sumUpNumbers(int x, int y)
 			{
 				return x + y;
 			}
 
-		
-		
 		private static int multiplyNumbers(int a, int b)
-		{ 
-			return a*b; 
-		}
-
-		
-		private static int subtractNumbers( int a, int b)
-		{
-			return a - b;
-		}
-		private static int divideNumbers( int d, int c)
 			{
-				return d/c;
+				return a * b;
 			}
 
+		private static int subtractNumbers(int a, int b)
+			{
+				return a - b;
+			}
 
+		private static double divideNumbers(double d, double c)
+			{
+				return d / c;
+			}
 
 	}
