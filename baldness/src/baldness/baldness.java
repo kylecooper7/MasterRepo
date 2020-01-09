@@ -6,6 +6,7 @@ public class baldness
 		public static void main(String[] args)
 			{
 				// TODO Auto-generated method stub
+
 				System.out.println("Be bald");
 				
 				
@@ -14,6 +15,7 @@ public class baldness
 					System.out.print("gigiddy ");
 					
 				}
+
 			}
 
 	}
