@@ -14,7 +14,7 @@ public class baldness
 					{
 						System.out.print("gigiddy ");
 					}
-
+      
 				printNumberOneToTen();
 				
 				System.out.println();
@@ -31,6 +31,7 @@ public class baldness
 			{
 				for (int i = 1; i <= 10; i++)
 					System.out.print(i + " ");
+
 			}
 
 		private static int sumUpNumbers(int x, int y)
