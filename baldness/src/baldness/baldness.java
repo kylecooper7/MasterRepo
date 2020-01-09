@@ -7,6 +7,12 @@ public class baldness
 			{
 				// TODO Auto-generated method stub
 
+
+				
+				printNumberOneToTen();
+
+			}
+
 				System.out.println("Be bald");
 				
 				
@@ -16,6 +22,12 @@ public class baldness
 					
 				}
 
+
+		private static void printNumberOneToTen()
+			{
+				// TODO Auto-generated method stub
+				for (int i = 1; i <= 10; i++)
+					System.out.print(i + " ");
 			}
 
 	}
