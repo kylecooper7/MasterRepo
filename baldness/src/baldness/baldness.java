@@ -55,10 +55,7 @@ public class baldness
 				System.out.println("The sum of the numbers is " + sumOfNumbers);
 			}
 
-		private static int sumUpNumbers(int x, int y)
-			{
-				return x + y;
-			}
+	
 
 		public static void multiplyNumberMethod()
 			{
@@ -72,10 +69,7 @@ public class baldness
 						+ ". When you multiply them you get " + multipliedTotal);
 			}
 
-		private static int multiplyNumbers(int a, int b)
-			{
-				return a * b;
-			}
+	
 
 		public static void subtractNumbersMethod()
 			{
@@ -83,13 +77,22 @@ public class baldness
 				int numberThree = userIntInput.nextInt();
 				int numberFour = userIntInput.nextInt();
 				int subtractedNumber = subtractNumbers(numberThree, numberFour);
+
 				System.out.println("The numbers subtracted is " + subtractedNumber);
+				
+				
+				System.out.println("Please pick two numbers to divide");
+				int numberFive = userIntInput.nextInt();
+				int numberSix = userIntInput.nextInt();
+				int dividedNumber = divideNumbers(numberFive, numberSix);
+				System.out.println("the numbers divided is " + dividedNumber);
+				
+
+
 			}
 
-		private static int subtractNumbers(int a, int b)
-			{
-				return a - b;
-			}
+
+		
 
 		private static void printNumberOneToTen()
 			{
@@ -117,6 +120,10 @@ public class baldness
 		{
 			return a - b;
 		}
+		private static int divideNumbers( int d, int c)
+			{
+				return d/c;
+			}
 
 
 
