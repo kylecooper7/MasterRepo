@@ -18,15 +18,26 @@ public class baldness
 				printNumberOneToTen();
 				
 				System.out.println();
-				System.out.println("To add numbers please input ntwo numbers below:");
+				System.out.println("Please input two numbers below for their sum:");
 				int numberOne = userIntInput.nextInt();
 				int numberTwo = userIntInput.nextInt();
 				int sumOfNumbers = sumUpNumbers(numberOne, numberTwo);
 
 				System.out.println("The sum of the Numbers is " + sumOfNumbers);
+				
+				
+				System.out.println("Please enter two numbers to be multiplied");
+				
+				 int multiplyInputOne = userIntInput.nextInt(); 
+				 int multiplyInputTwo = userIntInput.nextInt(); 
+				 int multipliedTotal = multiplyNumbers(multiplyInputOne, multiplyInputTwo); 
+				 
+				 System.out.println("Your two numbers are " + multiplyInputOne + " and " + multiplyInputTwo + ". When you multiply them you get " + multipliedTotal);
+				 
 
 			}
-
+		
+	
 		private static void printNumberOneToTen()
 			{
 				for (int i = 1; i <= 10; i++)
@@ -38,5 +49,16 @@ public class baldness
 			{
 				return x + y;
 			}
+		
+		
+		private static int multiplyNumbers(int a, int b)
+		{ 
+			return a*b; 
+		}
+
+		
+		
+		
+			
 
 	}
