@@ -5,9 +5,38 @@ import java.util.Scanner;
 public class baldness
 	{
 		static Scanner userIntInput = new Scanner(System.in);
+		static Scanner userStringInput = new Scanner(System.in); 
 
 		public static void main(String[] args)
 			{
+
+				// TODO Auto-generated method stub
+				
+				System.out.println("Hello, what is your name?");
+				String name = userStringInput.nextLine(); 
+				System.out.println("Hello " + name); 
+				System.out.println("How old are you?");
+				int age = userIntInput.nextInt(); 
+				
+				if(age >= 18)
+					{ 
+						System.out.println("Great! You're an adult!");
+					}
+				
+				else 
+					{ 
+						System.out.println("CHILD!");
+					}
+
+				
+				
+				for (int i = 0; i < 10; i++)
+					{
+						System.out.print("gigiddy ");
+					}
+      
+
+
 				printNumberOneToTen();
 				sumNumberMethod();
 				multiplyNumberMethod();
@@ -69,5 +98,26 @@ public class baldness
 				System.out.println();
 
 			}
+
+
+		private static int sumUpNumbers(int x, int y)
+			{
+				return x + y;
+			}
+
+		
+		
+		private static int multiplyNumbers(int a, int b)
+		{ 
+			return a*b; 
+		}
+
+		
+		private static int subtractNumbers( int a, int b)
+		{
+			return a - b;
+		}
+
+
 
 	}
