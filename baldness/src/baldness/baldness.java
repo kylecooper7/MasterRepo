@@ -22,9 +22,11 @@ public class baldness
 				int numberOne = userIntInput.nextInt();
 				int numberTwo = userIntInput.nextInt();
 				int sumOfNumbers = sumUpNumbers(numberOne, numberTwo);
+				
 
 				System.out.println("The sum of the Numbers is " + sumOfNumbers);
 				
+
 				
 				System.out.println("Please enter two numbers to be multiplied");
 				
@@ -34,6 +36,13 @@ public class baldness
 				 
 				 System.out.println("Your two numbers are " + multiplyInputOne + " and " + multiplyInputTwo + ". When you multiply them you get " + multipliedTotal);
 				 
+
+
+				System.out.println("Please pick two numbers to subtract");
+				int numberThree = userIntInput.nextInt();
+				int numberFour = userIntInput.nextInt();
+				int subtractedNumber = subtractNumbers(numberThree, numberFour);
+				System.out.println("the numbers subtracted is " + subtractedNumber);
 
 			}
 		
@@ -49,6 +58,7 @@ public class baldness
 			{
 				return x + y;
 			}
+
 		
 		
 		private static int multiplyNumbers(int a, int b)
@@ -60,5 +70,11 @@ public class baldness
 		
 		
 			
+
+		private static int subtractNumbers( int a, int b)
+		{
+			return a - b;
+		}
+
 
 	}
