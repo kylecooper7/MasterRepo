@@ -8,6 +8,11 @@ public class baldness
 				// TODO Auto-generated method stub
 
 
+
+
+
+
+
 				
 				printNumberOneToTen();
 
@@ -28,6 +33,7 @@ public class baldness
 				// TODO Auto-generated method stub
 				for (int i = 1; i <= 10; i++)
 					System.out.print(i + " ");
+
 			}
 
 	}
