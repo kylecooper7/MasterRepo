@@ -7,15 +7,21 @@ public class baldness
 			{
 				// TODO Auto-generated method stub
 
-				System.out.println("Be bald");
 
-				System.out.println("Be bald");
-				
-				System.out.println("NO U Fork");
 				
 				printNumberOneToTen();
 
 			}
+
+				System.out.println("Be bald");
+				
+				
+				System.out.println("NO U SPOON");
+				for(int i = 0; i < 10; i++) {
+					System.out.print("gigiddy ");
+					
+				}
+
 
 		private static void printNumberOneToTen()
 			{
